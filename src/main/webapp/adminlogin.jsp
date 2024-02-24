@@ -6,69 +6,80 @@
 <meta charset="ISO-8859-1">
 <title>Admin LogIn</title>
 	 <style>
-        body {
+       body {
            
-            background-color: #aab67e;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            line-height: 50px;
-            height: 100vh;
-            
-        }
+    background-color: rgb(208, 225, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    height: 100vh;
+   
+    
+}
 
-        .login-container {
-            background-color: #76a36c;
-            padding: 20px;
-            border-radius: 30px;
-            width: 300px;
-            border: 2px solid rgb(149, 151, 33);
-        }
+.login-container {
+    background-color: #e7cba4;
+    padding: 20px;
+    border-radius: 30px;
+    width: 300px;
+    border: 2px solid rgb(95, 95, 85);
+    transition: 1s;
+}
+.login-container:hover{
+    filter: drop-shadow(16px 7px 79px #161202);
+}
+h2{
+    text-align: center;
+    color: #43338a;
+    font-size: 35px;
+}
 
-        h2{
-            text-align: center;
-            color: #333;
-        }
+.form-group {
+    margin-bottom: 15px;
+}
 
-        .form-group {
-            margin-bottom: 15px;
-        }
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
 
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #2c2c28;
+    border-radius: 5px;
+    background-color: rgb(240, 204, 171);
+    
+}
 
-        .form-group input {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            border: 1px solid #ddc4c4;
-            border-radius: 3px;
-        }
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #777444;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: x-large;
+    font-family: cursive;
+    font-weight: bold;
+    transition: 0.5s;
+}
 
-        .form-group button {
-            width: 100%;
-            padding: 10px;
-            background-color: #536914;
-            color: #3f1111;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .form-group button:hover {
-            background-color: #035314;
-        }
-        .form-group p{
-            text-align: center;
-        }
-        
-        div p{
-        text-align: center;
-        line-height: 10px;
-        }
+.form-group button:hover {
+    background-color: #132e03;
+    color: white;
+}
+.form-group p{
+    text-align: center;
+}
+a{
+    color: #110741;
+    font-weight: bold;
+    font-size: 23px;
+}
     </style>
 </head>
 <body>

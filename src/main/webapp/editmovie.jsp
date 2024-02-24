@@ -14,14 +14,14 @@
 	<% MovieDto m = (MovieDto)request.getAttribute("movies");  %>
 
 	<form action="updatemovie" method="post" enctype="multipart/form-data">
-		movieid<input type="text" name="movieid" value="<%= m.getmId() %>" readonly><br>
-		moviename<input type="text" name="moviename" value="<%= m.getmName() %>"><br>
-		movieprice<input type="text" name="movieprice" value="<%= m.getmPrice() %>"><br>
-		movierating<input type="text" name="movierating" value="<%= m.getmRatting() %>"><br>
-		moviegenre<input type="text" name="moviegenre" value="<%= m.getmGenre() %>"><br>
+		movieid<input type="number" name="mId" value="<%= m.getmId() %>" readonly><br>
+		moviename<input type="text" name="mName" value="<%= m.getmName() %>"><br>
+		movieprice<input type="number" name="mPrice" value="<%= m.getmPrice() %>"><br>
+		movierating<input type="number" name="mRatting" value="<%= m.getmRatting() %>"><br>
+		moviegenre<input type="text" name="mGenre" value="<%= m.getmGenre() %>"><br>
 		
 		
-		movieimage<input type="file" name="movieimage"><br>
+		movieimage<input type="file" name="mImage"><br>
 		<input type="submit">
 		
 		

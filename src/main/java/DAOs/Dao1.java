@@ -130,7 +130,7 @@ public class Dao1
 	
 	public int updateMovie(MovieDto movie) throws ClassNotFoundException, SQLException {
 		Connection conn = getConnection();
-		PreparedStatement pst = conn.prepareStatement("update movie set moviename=?, movieprice=?,movierating=?,moviegenre=?,movieimage=? where movieid=?");
+		PreparedStatement pst = conn.prepareStatement("update movies set mName=?, mPrice=?,mRatting=?,mGenre=?,mImage=? where mId=?");
 		
 		pst.setInt(6, movie.getmId());
 		pst.setString(1, movie.getmName());

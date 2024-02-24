@@ -23,13 +23,12 @@ public class UpdateMovie extends HttpServlet
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	
-		int movieid= Integer.parseInt(req.getParameter("movieid"));
-		String moviename = req.getParameter("moviename");
-		double movieprice = Double.parseDouble(req.getParameter("movieprice"));
-		double movierating =  Double.parseDouble(req.getParameter("movierating"));
-		String moviegenre = req.getParameter("moviegenre");
-		String movielanguage = req.getParameter("movielanguage");
-		Part imagepart  = req.getPart("movieimage");
+		int movieid= Integer.parseInt(req.getParameter("mId"));
+		String moviename = req.getParameter("mName");
+		double movieprice = Double.parseDouble(req.getParameter("mPrice"));
+		double movierating =  Double.parseDouble(req.getParameter("mRatting"));
+		String moviegenre = req.getParameter("mGenre");
+		Part imagepart  = req.getPart("mImage");
 		
 		MovieDto movie = new MovieDto();
 		movie.setmId(movieid);

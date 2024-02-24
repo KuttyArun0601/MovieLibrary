@@ -16,10 +16,11 @@ import DTOs.MovieDto;
 @WebServlet("/editmovie")
 public class MovieEdit  extends HttpServlet{
 	
+	
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		int id=Integer.parseInt(req.getParameter("mId"));
+		int  id  =  Integer.parseInt(req.getParameter("id"));
 		Dao1 dao =new Dao1();
 		
 		try {
